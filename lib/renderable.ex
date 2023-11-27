@@ -82,7 +82,7 @@ defimpl OpenSCAD.Renderable, for: Any do
       raise "#{inspect(me)} is not renderable"
       :error
     else
-      _ = Logger.warn("#{inspect(me)} is not renderable")
+      _ = Logger.warning("#{inspect(me)} is not renderable")
       ""
     end
   end
